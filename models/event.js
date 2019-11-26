@@ -18,7 +18,14 @@ const eventSchema = new Schema({
   date: {
     type: Date,
     required: true
-  }
+  },
+  // Every event should be created by a user
+  creator: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "User"
+    }
+  ]
 });
 
 module.exports = mongoose.model("Event", eventSchema);
