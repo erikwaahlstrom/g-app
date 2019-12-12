@@ -1,3 +1,3 @@
-React test app:
+React make events test app:
 
 GraphQL - Node - Mongo - React
